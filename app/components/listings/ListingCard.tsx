@@ -115,22 +115,31 @@ const ListingCard: React.FC<ListingCardProps> = ({
         <div className="font-semibold text-lg">
           {location?.region}, {location?.label}
         </div>
-        <span className={`font-light text-neutral-500 bg-green-200 border-green-500 border-2 px-1 flex justify-center items-center ${size}`}>
+
+       <div className="flex  items-center">
+       <div className={`font-light text-neutral-500 bg-green-200 border-green-500 border-2  flex justify-center items-center ${size}`}>
           {reservationDate || data.category} 
           
-        </span>
-        <div className="flex flex-row items-center gap-1">
-          
-          {!reservation && (
-            <div className="font-light">book now</div>
-          )}
-        </div>
+        </div> 
+        <div className="px-4">⭐️⭐️⭐️⭐️</div>
+
+
+       </div>
+       {!reservation && (
+          <Button
+            disabled={disabled}
+            small
+            label={"BookNow"} 
+            onClick={()=>{}}
+          />
+        )}
+
         {onAction && actionLabel && (
           <Button
             disabled={disabled}
             small
             label={actionLabel} 
-            onClick={handleCancel}
+            onClick={()=>{}}
           />
         )}
       </div>
