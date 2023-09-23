@@ -21,83 +21,80 @@ import CategoryBox from "../CategoryBox";
 import Container from '../Container';
 
 
+
 export const categories = [
   {
-    label: 'Beach',
-    icon: TbBeach,
-    description: 'This property is close to the beach!',
+    label: 'Surgeon',
+    icon: TbBeach, // Replace with Surgeon icon
+    description: 'Specializing in surgical procedures.',
   },
   {
-    label: 'Windmills',
-    icon: GiWindmill,
-    description: 'This property is has windmills!',
+    label: 'Cardiologist',
+    icon: GiWindmill, // Replace with Cardiologist icon
+    description: 'Specializing in heart-related conditions and treatments.',
   },
   {
-    label: 'Modern',
-    icon: MdOutlineVilla,
-    description: 'This property is modern!'
+    label: 'Dermatologist',
+    icon: MdOutlineVilla, // Replace with Dermatologist icon
+    description: 'Specializing in skin-related issues and treatments.',
   },
   {
-    label: 'Countryside',
-    icon: TbMountain,
-    description: 'This property is in the countryside!'
+    label: 'Pediatrician',
+    icon: TbMountain, // Replace with Pediatrician icon
+    description: 'Specializing in child healthcare.',
   },
   {
-    label: 'Pools',
-    icon: TbPool,
-    description: 'This is property has a beautiful pool!'
+    label: 'Orthopedic',
+    icon: TbPool, // Replace with Orthopedic icon
+    description: 'Specializing in musculoskeletal conditions and treatments.',
   },
   {
-    label: 'Islands',
-    icon: GiIsland,
-    description: 'This property is on an island!'
+    label: 'Gynecologist',
+    icon: GiIsland, // Replace with Gynecologist icon
+    description: 'Specializing in women\'s reproductive health.',
   },
   {
-    label: 'Lake',
-    icon: GiBoatFishing,
-    description: 'This property is near a lake!'
+    label: 'Neurologist',
+    icon: GiBoatFishing, // Replace with Neurologist icon
+    description: 'Specializing in neurological disorders and treatments.',
   },
   {
-    label: 'Skiing',
-    icon: FaSkiing,
-    description: 'This property has skiing activies!'
+    label: 'Psychiatrist',
+    icon: FaSkiing, // Replace with Psychiatrist icon
+    description: 'Specializing in mental health and psychiatric treatments.',
   },
   {
-    label: 'Castles',
-    icon: GiCastle,
-    description: 'This property is an ancient castle!'
+    label: 'Ophthalmologist',
+    icon: GiCastle, // Replace with Ophthalmologist icon
+    description: 'Specializing in eye and vision care.',
   },
   {
-    label: 'Caves',
-    icon: GiCaveEntrance,
-    description: 'This property is in a spooky cave!'
+    label: 'Dentist',
+    icon: GiCaveEntrance, // Replace with Dentist icon
+    description: 'Specializing in oral health and dental treatments.',
   },
   {
-    label: 'Camping',
-    icon: GiForestCamp,
-    description: 'This property offers camping activities!'
+    label: 'Allergist',
+    icon: GiForestCamp, // Replace with Allergist icon
+    description: 'Specializing in allergies and immunology.',
   },
   {
-    label: 'Arctic',
-    icon: BsSnow,
-    description: 'This property is in arctic environment!'
+    label: 'Urologist',
+    icon: BsSnow, // Replace with Urologist icon
+    description: 'Specializing in urinary tract and male reproductive health.',
   },
   {
-    label: 'Desert',
-    icon: GiCactus,
-    description: 'This property is in the desert!'
+    label: 'Oncologist',
+    icon: GiCactus, // Replace with Oncologist icon
+    description: 'Specializing in cancer diagnosis and treatment.',
   },
   {
-    label: 'Barns',
-    icon: GiBarn,
-    description: 'This property is in a barn!'
+    label: 'General Practitioner',
+    icon: IoDiamond, // Replace with General Practitioner icon
+    description: 'Offering general healthcare services for various medical issues.',
   },
-  {
-    label: 'Lux',
-    icon: IoDiamond,
-    description: 'This property is brand new and luxurious!'
-  }
-]
+
+];
 
 const Categories = () => {
   const params = useSearchParams();

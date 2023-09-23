@@ -70,6 +70,10 @@ const ListingCard: React.FC<ListingCardProps> = ({
     return `${format(start, 'PP')} - ${format(end, 'PP')}`;
   }, [reservation]);
 
+
+  const size=data.category.length > 10 ? 'w-1/2' : 'w-1/4';;
+  
+
   return (
     <div 
       onClick={() => router.push(`/listings/${data.id}`)} 
@@ -111,15 +115,14 @@ const ListingCard: React.FC<ListingCardProps> = ({
         <div className="font-semibold text-lg">
           {location?.region}, {location?.label}
         </div>
-        <div className="font-light text-neutral-500">
-          {reservationDate || data.category}
-        </div>
+        <span className={`font-light text-neutral-500 bg-green-200 border-green-500 border-2 px-1 flex justify-center items-center ${size}`}>
+          {reservationDate || data.category} 
+          
+        </span>
         <div className="flex flex-row items-center gap-1">
-          <div className="font-semibold">
-            $ {price}
-          </div>
+          
           {!reservation && (
-            <div className="font-light">night</div>
+            <div className="font-light">book now</div>
           )}
         </div>
         {onAction && actionLabel && (
