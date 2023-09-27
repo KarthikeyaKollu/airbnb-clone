@@ -13,6 +13,7 @@ import { SafeUser } from "@/app/types";
 import MenuItem from "./MenuItem";
 import Avatar from "../Avatar";
 
+
 interface UserMenuProps {
   currentUser?: SafeUser | null
 }
@@ -61,6 +62,26 @@ const UserMenu: React.FC<UserMenuProps> = ({
         >
           Provide A Service
         </div>
+        <div 
+          onClick={()=>router.push('/dashboard')}
+          className="
+            hidden
+            md:block
+            text-sm 
+            font-semibold 
+            py-3 
+            px-4 
+            rounded-full 
+            border-2
+            hover:bg-green-100 
+            transition 
+            cursor-pointer
+          "
+        >
+          Dashboard
+        </div>
+
+        
         <div 
         onClick={toggleOpen}
         className="
@@ -116,8 +137,8 @@ const UserMenu: React.FC<UserMenuProps> = ({
                   onClick={() => router.push('/reservations')}
                 />
                 <MenuItem 
-                  label="My Services" 
-                  onClick={() => router.push('/properties')}
+                  label="My Services" onClick={() => router.push('/properties')}
+                  
                 />
                 <MenuItem 
                   label="My Dashboard" 

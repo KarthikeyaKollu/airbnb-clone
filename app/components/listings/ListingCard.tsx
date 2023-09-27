@@ -117,11 +117,11 @@ const ListingCard: React.FC<ListingCardProps> = ({
         </div>
 
        <div className="flex  items-center">
-       <div className={`font-light text-neutral-500 bg-green-200 border-green-500 border-2  flex justify-center items-center ${size}`}>
+       <div className={`font-light text-neutral-500 bg-green-200 border-green-500  flex justify-center items-center ${size}`}>
           {reservationDate || data.category} 
           
         </div> 
-        <div className="px-4">⭐️⭐️⭐️⭐️</div>
+        <div className="px-3">⭐️⭐️⭐️⭐️</div>
         <div className="text-lg font-bold">{data.price}$</div>
 
 
