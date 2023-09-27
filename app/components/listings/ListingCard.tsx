@@ -122,6 +122,7 @@ const ListingCard: React.FC<ListingCardProps> = ({
           
         </div> 
         <div className="px-4">⭐️⭐️⭐️⭐️</div>
+        <div className="text-lg font-bold">{data.price}$</div>
 
 
        </div>
@@ -129,7 +130,7 @@ const ListingCard: React.FC<ListingCardProps> = ({
           <Button
             disabled={disabled}
             small
-            label={"BookNow"} 
+            label={"View detail"} 
             onClick={()=>{}}
           />
         )}
@@ -139,7 +140,7 @@ const ListingCard: React.FC<ListingCardProps> = ({
             disabled={disabled}
             small
             label={actionLabel} 
-            onClick={()=>{}}
+            onClick={handleCancel}
           />
         )}
       </div>

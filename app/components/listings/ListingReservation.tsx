@@ -42,7 +42,7 @@ const ListingReservation: React.FC<
           $ {price}
         </div>
         <div className="font-light text-neutral-600">
-          night
+         / Appointment
         </div>
       </div>
       <hr />
@@ -79,6 +79,8 @@ const ListingReservation: React.FC<
           $ {totalPrice}
         </div>
       </div>
+ 
+
     </div>
    );
 }

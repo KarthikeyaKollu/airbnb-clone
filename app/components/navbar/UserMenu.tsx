@@ -120,9 +120,14 @@ const UserMenu: React.FC<UserMenuProps> = ({
                   onClick={() => router.push('/properties')}
                 />
                 <MenuItem 
+                  label="My Dashboard" 
+                  onClick={() => router.push('/dashboard')}
+                />
+                <MenuItem 
                   label="Provide A Service" 
                   onClick={rentModal.onOpen}
                 />
+                
                 <hr />
                 <MenuItem 
                   label="Logout" 
